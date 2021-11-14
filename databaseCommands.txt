@@ -1,0 +1,55 @@
+To Create Database:
+
+CREATE DATABASE phone;
+
+
+To Create Table:
+
+CREATE TABLE information(
+	id int NOT NULL AUTO_INCREMENT,
+	name VARCHAR(30),
+	fatherName VARCHAR(30),
+	motherName VARCHAR(30),
+	age int(3),
+	gender VARCHAR(6),
+	email VARCHAR(30),
+	password VARCHAR(20),
+	PRIMARY KEY(id)
+);
+
+
+To Insert an Entry:
+
+INSERT INTO information VALUES(NULL, "Mr. Test", "Mr. Father", "Mrs. Mother", 0, "Other", "abc@email.com", "abc12345");
+
+
+To Retrieve an Entry:
+
+SELECT * FROM information WHERE name = “Mr. Test”;
+
+
+To Retrieve all Entries:
+
+SELECT * FROM information;
+
+
+To Update an Entry:
+
+UPDATE information SET email = "test@email.com" WHERE id=1;
+
+
+To Delete an Entry:
+
+DELETE FROM information WHERE name="Mr. Test";
+
+
+To Delete all Entries:
+
+DELETE FROM information;
+
+
+To Reset AUTO_INCREMENT Counter:
+
+ALTER TABLE information AUTO_INCREMENT=1;
+
+
